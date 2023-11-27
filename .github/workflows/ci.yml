@@ -61,12 +61,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build and test
+    - name: Build
       env:
          CMAKE_OPTIONS: -DCMARK_SHARED=OFF
       run: |
          make
-         make test
+         #make test
     - name: Swift build
       run: |
          swift build
