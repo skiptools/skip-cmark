@@ -54,9 +54,6 @@ jobs:
        CMAKE_OPTIONS: ${{ matrix.cmake_opts }}
        CC: ${{ matrix.compiler.c }}
        CXX: ${{ matrix.compiler.cpp }}
-    - name: Gradle test
-      run: |
-         gradle test
 
     steps:
     - uses: actions/checkout@v1
