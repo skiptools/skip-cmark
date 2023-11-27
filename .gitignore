@@ -34,6 +34,7 @@ cmark.dSYM/*
 cmark
 .vscode
 .DS_Store
+.*.swp
 
 # Testing and benchmark
 alltests.md
@@ -44,3 +45,9 @@ test/afl_results/
 # Build directories for SwiftPM and Xcode
 .swiftpm
 .build
+
+# Gradle/Kotlin directories for Skip
+.gradle
+.cxx
+build
+

@@ -32,6 +32,9 @@ jobs:
          make
          make test
          make leakcheck
+    - name: Gradle test
+      run: |
+         gradle test
 
   macos:
 
@@ -51,6 +54,9 @@ jobs:
        CMAKE_OPTIONS: ${{ matrix.cmake_opts }}
        CC: ${{ matrix.compiler.c }}
        CXX: ${{ matrix.compiler.cpp }}
+    - name: Gradle test
+      run: |
+         gradle test
 
     steps:
     - uses: actions/checkout@v1
@@ -60,6 +66,9 @@ jobs:
       run: |
          make
          make test
+    - name: Gradle test
+      run: |
+         gradle test
 
   windows:
 
@@ -81,3 +90,6 @@ jobs:
         chcp 65001
         nmake.exe /nologo /f Makefile.nmake test
       shell: cmd
+    - name: Gradle test
+      run: |
+         gradle test
