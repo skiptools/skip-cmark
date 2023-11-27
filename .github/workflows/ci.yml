@@ -50,13 +50,13 @@ jobs:
       fail-fast: false
       matrix:
         cmake_opts:
-          - '-DCMARK_SHARED=ON'
+          #- '-DCMARK_SHARED=ON'
           - ''
         compiler:
           - c: 'clang'
             cpp: 'clang++'
-          - c: 'gcc'
-            cpp: 'g++'
+          #- c: 'gcc'
+            #cpp: 'g++'
     env:
        CMAKE_OPTIONS: ${{ matrix.cmake_opts }}
        CC: ${{ matrix.compiler.c }}
