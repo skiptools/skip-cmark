@@ -32,9 +32,6 @@ jobs:
          make
          make test
          make leakcheck
-    - name: Swift build
-      run: |
-         swift build
     - uses: actions/setup-java@v3
       with:
          distribution: 'temurin'
