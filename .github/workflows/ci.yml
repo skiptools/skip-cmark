@@ -32,6 +32,10 @@ jobs:
          make
          make test
          make leakcheck
+    - uses: actions/setup-java@v3
+      with:
+         distribution: 'temurin'
+         java-version: '17'
     - name: Gradle test
       run: |
          gradle test
@@ -63,6 +67,10 @@ jobs:
       run: |
          make
          make test
+    - uses: actions/setup-java@v3
+      with:
+         distribution: 'temurin'
+         java-version: '17'
     - name: Gradle test
       run: |
          gradle test
@@ -87,6 +95,10 @@ jobs:
         chcp 65001
         nmake.exe /nologo /f Makefile.nmake test
       shell: cmd
+    - uses: actions/setup-java@v3
+      with:
+         distribution: 'temurin'
+         java-version: '17'
     - name: Gradle test
       run: |
          gradle test
