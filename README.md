@@ -1,6 +1,17 @@
-cmark-gfm
-=========
+skip-cmark
+==========
 
+This package provides the `libcmark` native library, along with
+SwiftPM (`Package.swift`) and Gradle (`settings.gradle.kts`/`build.gradle.kts`)
+projects for building the project as a dual-platform Skip library for
+Android and iOS. It is designed to be consumed by the
+[skip-mark](https://github.com/skiptools/skip-mark.git) framework,
+which uses [skip-ffi](https://github.com/skiptools/skip-ffi.git)
+to provide a unified interface to the cmark library from
+the Swift and Kotlin languages, enabling the same API
+to be used in both iOS (native Swift) and Android (Java/Kotlin) apps.
+
+`skip-cmark` is based on the `cmark-gfm` branch.
 `cmark-gfm` is an extended version of the C reference implementation of
 [CommonMark], a rationalized version of Markdown syntax with a spec.  This
 repository adds GitHub Flavored Markdown extensions to
