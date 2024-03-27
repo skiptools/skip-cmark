@@ -51,3 +51,6 @@ test/afl_results/
 .cxx
 build
 
+
+# gradle properties
+local.properties
